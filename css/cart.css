@@ -1,0 +1,65 @@
+#productTotalTable,.productTotalPrice{
+  display: none;
+}
+h1{
+  font-weight: 700;
+  font-size: x-large;
+  text-align: center;
+  margin: 20px 0;
+}
+h2{
+  font-weight: 700;
+}
+table{
+  margin-bottom: 50px;
+  width: 100%;
+}
+thead tr,tbody tr{
+  display: grid;
+  grid-template-columns: 44% 27% 27%;
+  gap:5px;
+}
+thead{
+  font-weight: 700;
+}
+tr{
+  margin-bottom: 20px;
+}
+th{
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.productImgName img{
+  border-radius: 5px;
+}
+.productQuantity input{
+  width:25%;
+  border: 1px #aaa solid;
+  border-radius: 2px;
+}
+#totalPrice{
+  width: 100%;
+  float: right;
+}
+#totalPrice .container div{
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width:732px) {
+  h1{
+    margin: 70px 0;
+  }
+  #productTotalTable,.productTotalPrice{
+    display: flex;
+  }
+  thead tr,tbody tr{
+    display: grid;
+    grid-template-columns: 40% repeat(3,20%);
+    gap:2%;
+  }
+  #totalPrice{
+    width: 50%;
+  }
+}

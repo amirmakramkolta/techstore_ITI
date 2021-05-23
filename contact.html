@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/contact.css">
+  <title>Contact us</title>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li>Contact us</li>
+      </ul>
+      <a href="cart.html">
+        <img src="images/carts.svg" alt="carts" />
+        <span>0</span>
+      </a>
+    </div>
+  </nav>
+  <section>
+    <div class="container">
+      <h1>Leave for us a message</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsa ratione quae consequuntur in esse vero
+        consequatur, incidunt sit asperiores veniam ullam ab. Aut tempora rerum nostrum ab, aperiam eaque!</p>
+    </div>
+  </section>
+  <div class="container">
+    <form id="sendMessage">
+      <div class="label">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="label">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="label">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+      <div class="label">
+        <label for="message">Message:</label>
+        <textarea form="sendMessage" id="message" name="message" required></textarea>
+      </div>
+      <div class="label">
+        <input type="submit" id="submit" name="submit">
+      </div>
+  </div>
+  </form>
+  <script src="js/contact.js"></script>
+</body>
+</html>

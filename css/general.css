@@ -1,0 +1,66 @@
+:root{
+  --color-scheme: #FFC107
+}
+
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: var(--color-scheme);
+}
+nav .container{
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+nav .container ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+}
+nav .container ul li{
+  font-weight: 700;
+}
+nav .container ul li a{
+  font-weight: 400;
+}
+nav > .container > a {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav > .container > a > img{
+  width: 50%;
+}
+nav > .container > a > span{
+  align-self: center;
+  width: 50%;
+  text-align: center;
+}
+@media (min-width:732px) {
+  .container{
+    width: 80%;
+  }
+  nav .container{
+    padding: 1%;
+  }
+}
+@media(min-width:1188px){
+  nav{
+    font-size: larger;
+  }
+  nav > .container > a > img{
+    width: 30%;
+  }
+}

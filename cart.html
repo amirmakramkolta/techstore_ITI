@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" />
+  <link rel="stylesheet" href="css/general.css"/>
+  <link rel="stylesheet" href="css/cart.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+      <a href="cart.html">
+        <img src="images/carts.svg" alt="carts">
+        <span>0</span>
+      </a>
+    </div>
+  </nav>
+  <h1>
+    <div class="container">
+      Cart
+    </div>
+  </h1>
+  <section id="cartItems">
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <th id="productNameTable">Product</th>
+            <th id="productPriceTable">Price</th>
+            <th id="productQuantityTable">Quantity</th>
+            <th id="productTotalTable">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="productImgName">
+              <img src="https://via.placeholder.com/50" alt="">
+              <h2>Product name</h2>
+            </th>
+            <th class="productPrice">
+              $price
+            </th>
+            <th class="productQuantity">
+              <input type="number" value="1">
+            </th>
+            <th class="productTotalPrice">
+              $price
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <section id="totalPrice">
+    <div class="container">
+      <h3>Cart total</h3>
+      <hr>
+      <div>
+        <p>Total:</p>
+        <p>$price</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

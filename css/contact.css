@@ -1,0 +1,35 @@
+section{
+  margin: 20px 0;
+}
+h1{
+  font-weight: 700;
+  font-size: x-large;
+  margin: 20px 0;
+}
+form .label{
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.label input,textarea{
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  height: 30px;
+}
+textarea{
+  height: 75px;
+  resize:vertical;
+}
+#submit{
+  background-color: var(--color-scheme);
+  color: #fff;
+}
+@media(min-width:1050px){
+  textarea{
+    height: 150px;
+  }
+  #submit{
+    width: 200px;
+  }
+}

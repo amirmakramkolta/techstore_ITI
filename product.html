@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" />
+  <link rel="stylesheet" href="css/general.css"/>
+  <link rel="stylesheet" href="css/product.css">
+  <title>Product</title>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+      <a href="cart.html">
+        <img src="images/carts.svg" alt="carts">
+        <span>0</span>
+      </a>
+    </div>
+  </nav>
+  <section id="titleImgDetailsPrice">
+    <div class="container">
+      <section id="productTitle">
+        <h1>Product title</h1>
+      </section>
+      <section id="productImg">
+        <img src="https://via.placeholder.com/350" alt="product image">
+      </section>
+      <section id="productDetails">
+        <div>Details</div>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deleniti, corrupti, porro commodi ad nobis hic fuga enim velit asperiores beatae mollitia rem fugiat nulla laborum quae ducimus. Incidunt, recusandae.</p>
+      </section>
+      <section id="productPrice">
+        <div id="stock">
+          <p>Available: <span id="isAvailble"></span></p>
+        </div>
+        <hr>
+        <h2 id="price">$price</h2>
+        <div id = "quantity">
+          <div>Quantity:</div>
+          <input type="number" value="1" placeholder="How many do you want">
+        </div>
+        <div id="addToCard">
+          <button>Add to card</button>
+        </div>
+      </section>
+    </div>
+  </section>
+</body>
+</html>
