@@ -35,6 +35,14 @@ h1{
   border-radius: 50px;
   background-color: #aaa;
 }
+.yes{
+  color: darkgreen;
+  font-weight: 700;
+}
+.no{
+  color: tomato;
+  font-weight: 700;
+}
 #price{
   font-weight: 700;
   font-size: x-large;
@@ -61,6 +69,11 @@ h1{
 }
 #addToCard button:active{
   background-color: var(--color-scheme);
+}
+#addToCard button:disabled,
+#addToCard button[disabled]{
+  background-color: #555;
+  cursor:unset;
 }
 @media(min-width: 732px){
   #titleImgDetailsPrice .container{
