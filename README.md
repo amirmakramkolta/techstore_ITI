@@ -8,7 +8,7 @@ This project contains:
 - Home page with show our products (done)
 - Product page to show you our products details. (done)
 - About us page. (done)
-- Contact us page. (in progress)
+- Contact us page. (done)
 - Cart page. (in progress)
 
 ## what I use

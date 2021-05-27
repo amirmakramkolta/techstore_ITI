@@ -42,3 +42,7 @@ h2{
   width: 25px;
   cursor: pointer;
 }
+.out-of-stock{
+  filter: grayscale(100%);
+  cursor: unset;
+}

@@ -1,4 +1,4 @@
-const urlProducts = "https://afternoon-falls-30227.herokuapp.com/api/v1/products/"
+const urlProducts = "https://afternoon-falls-30227.herokuapp.com/api/v1/products/";
 
 const mainContainer = document.querySelector("#products .container");
 
@@ -9,7 +9,6 @@ xhr.open("GET",urlProducts);
 xhr.send();
 xhr.onload = ()=>{
   if(xhr.status === 200){
-    //console.log(JSON.parse(xhr.response).data);
     for(const item of JSON.parse(xhr.response).data){
       const productBox = document.createElement("div");
       productBox.classList.add("product-box");
@@ -36,8 +35,8 @@ xhr.onload = ()=>{
       productPrice.textContent = `${item.CurrencyCode} ${item.Price}`;
       productBottom.appendChild(productPrice);
       const addToCartImg = document.createElement("img");
-      addToCartImg.src = "../images/carts.svg"
-      addToCartImg.classList.add("add-to-card")
+      addToCartImg.src = "../images/carts.svg";
+      addToCartImg.classList.add("add-to-card");
       productBottom.appendChild(addToCartImg);
       mainContainer.appendChild(productBox);
     }
