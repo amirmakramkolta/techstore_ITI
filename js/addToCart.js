@@ -34,6 +34,7 @@ if(webPage==="home"){
               productsNumber();
             }else{
               item.classList.add("out-of-stock");
+              alert("Sorry out of stock");
             }
           }else{
             localStorage.setItem(data[i].ProductId,JSON.stringify(data[i]));
