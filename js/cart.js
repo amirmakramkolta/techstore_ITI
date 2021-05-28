@@ -119,10 +119,10 @@ if (items == "") {
 }
 
 function calcTotalItemsPrice() {
+  const itemsForTotalPrice = allStorageProductItems();
   let totalPriceAll = 0;
-  const totalPriceTable = document.querySelectorAll(".productTotalPrice span");
-  for (const eachTotalPrice of totalPriceTable) {
-    totalPriceAll += Number(eachTotalPrice.textContent);
+  for (const item of itemsForTotalPrice) {
+    totalPriceAll += item.inCart * item.Price;
   }
   totalPrice.textContent = totalPriceAll + " EUR";
 }

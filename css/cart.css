@@ -41,6 +41,9 @@ th{
 .productQuantity{
   gap: 5px
 }
+.productQuantity p{
+  width: 8%;
+}
 #more,#less{
   background-color: var(--color-scheme);
   color:#fff;
