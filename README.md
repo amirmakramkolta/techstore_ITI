@@ -5,11 +5,11 @@
 This a e-shop with products we get from an API.
 This project contains:
 
-- Home page with show our products (done)
-- Product page to show you our products details. (done)
-- About us page. (done)
-- Contact us page. (done)
-- Cart page. (in progress)
+- Home page with show our products.
+- Product page to show you our products details.
+- About us page.
+- Contact us page.
+- Cart page.
 
 ## what I use
 

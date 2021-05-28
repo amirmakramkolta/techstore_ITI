@@ -23,13 +23,11 @@ if(webPage==="home"){
         const item = shoppingCartImg[i];
         item.addEventListener("click",()=>{
           let selectedProduct = localStorage.getItem(data[i].ProductId);
-          // console.log(selectedProduct);
           if(selectedProduct){
             let selectedProductObj = JSON.parse(selectedProduct);
             if(selectedProductObj.Quantity>0){
               --selectedProductObj.Quantity;
               ++selectedProductObj.inCart;
-              console.log(selectedProduct);
               localStorage.setItem(selectedProductObj.ProductId,JSON.stringify(selectedProductObj));
               productsNumber();
             }else{
@@ -42,7 +40,6 @@ if(webPage==="home"){
             let newDataObj = JSON.parse(newData);
             --newDataObj.Quantity;
             newDataObj.inCart = 1;
-            console.log(newDataObj);
             localStorage.setItem(newDataObj.ProductId,JSON.stringify(newDataObj));
             productsNumber();
           }

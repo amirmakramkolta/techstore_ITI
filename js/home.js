@@ -24,7 +24,6 @@ xhr.onload = ()=>{
       productHead.appendChild(image);
       productHead.addEventListener("click",()=>{
         getId.id=productHead.id;
-        console.log(productHead.id);
         location.href = `product.html?${productHead.id}`
       })
 

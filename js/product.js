@@ -12,7 +12,6 @@ xhr.send();
 xhr.onload = ()=>{
   if(xhr.status===200){
     let item = JSON.parse(xhr.response).data;
-    // console.log(item);
     const pageTitle = document.querySelector("title");
     const productTitle = document.querySelector("#productTitle h1");
     const productDetails = document.querySelector("#productDetails p"); 
@@ -51,7 +50,6 @@ xhr.onload = ()=>{
       if(selectedProduct){
         if(selectedProduct.Quantity>=Number(productQuantity.value)){
           selectedProduct.Quantity-=Number(productQuantity.value);
-          console.log(selectedProduct.Quantity);
           selectedProduct.inCart += Number(productQuantity.value);
           localStorage.setItem(productId,JSON.stringify(selectedProduct));
           productsNumber(productQuantity.value);

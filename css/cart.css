@@ -1,4 +1,4 @@
-#productTotalTable,.productTotalPrice{
+#productPriceTable,.productPrice{
   display: none;
 }
 h1{
@@ -13,6 +13,9 @@ h2{
 table{
   margin-bottom: 50px;
   width: 100%;
+}
+.empty-cart{
+  text-align: center;
 }
 thead tr,tbody tr{
   display: grid;
@@ -33,11 +36,31 @@ th{
 }
 .productImgName img{
   border-radius: 5px;
+  width: 50px;
 }
-.productQuantity input{
-  width:25%;
-  border: 1px #aaa solid;
-  border-radius: 2px;
+.productQuantity{
+  gap: 5px
+}
+#more,#less{
+  background-color: var(--color-scheme);
+  color:#fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+#less:disabled,
+#less[disabled],
+#more:disabled,
+#more[disabled]{
+  background-color: #555;
+  cursor:unset;
+}
+#more:active{
+  background-color: navy;
+}
+#less:active{
+  background-color: red;
 }
 #totalPrice{
   width: 100%;
@@ -47,11 +70,14 @@ th{
   display: flex;
   justify-content: space-around;
 }
+.total-price{
+  font-weight: 700;
+}
 @media (min-width:732px) {
   h1{
     margin: 70px 0;
   }
-  #productTotalTable,.productTotalPrice{
+  #productPriceTable,.productPrice{
     display: flex;
   }
   thead tr,tbody tr{
